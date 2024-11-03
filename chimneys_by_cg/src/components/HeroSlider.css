@@ -1,20 +1,32 @@
 /* src/components/HeroSlider.css */
+
 .hero-slider {
-    overflow: hidden;
-    width: 100%;
-    height: 400px;
-    position: relative;
-  }
-  
-  .slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    min-width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-  }
-  
+  width: 100%;
+  max-width: 500x;       /* Limits the width of the slider */
+  height: 300px;          /* Fixed height for a smaller area */
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 9px;     /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for effect */
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;       /* Scale image to fit without cropping */
+  object-position: center;   /* Center the image within the slide */
+}
