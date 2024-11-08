@@ -1,10 +1,9 @@
 // src/App.jsx
 import React from 'react';
-import './App.css';
 import Header from './components/Header';
 import HeroSlider from './components/HeroSlider';
-import BioSection from './components/BioSection'; 
-import BlogSection from './components/BlogSection'; 
+import BioSection from './components/BioSection';
+import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,9 +11,15 @@ function App() {
     <div className="App">
       <Header />
       <HeroSlider />
-      <BioSection />
-      <BlogSection />
-      <Footer />
+      <section id="about">
+        <BioSection />
+      </section>
+      <section id="services">
+        <BlogSection />
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
     </div>
   );
 }
