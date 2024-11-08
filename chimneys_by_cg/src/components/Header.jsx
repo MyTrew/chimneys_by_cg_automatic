@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <div className="logo">Charles Gilliam</div>
+      <div className="logo">Chimney Restoration By Charles Gilliam</div>
       <nav>
         <ul className="nav-links">
           <li><a href="#about">About Us</a></li>
